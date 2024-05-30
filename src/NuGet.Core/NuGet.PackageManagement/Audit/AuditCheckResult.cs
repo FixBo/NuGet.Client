@@ -34,8 +34,8 @@ namespace NuGet.PackageManagement
         private const string AuditVulnerabilitiesSev2Count = "PackagesConfig.Audit.Vulnerability.Severity2.Count";
         private const string AuditVulnerabilitiesSev3Count = "PackagesConfig.Audit.Vulnerability.Severity3.Count";
         private const string AuditVulnerabilitiesInvalidSeverityCount = "PackagesConfig.Audit.Vulnerability.SeverityInvalid.Count";
-        private const string AuditSuppressedAdvisoriesTotalWarningsSuppressedCount = "Audit.SuppressedAdvisories.TotalWarningsSuppressed.Count";
-        private const string AuditSuppressedAdvisoriesDistinctAdvisoriesSuppressedCount = "Audit.SuppressedAdvisories.DistinctAdvisoriesSuppressed.Count";
+        private const string AuditSuppressedAdvisoriesTotalWarningsSuppressedCount = "PackagesConfig.Audit.SuppressedAdvisories.TotalWarningsSuppressed.Count";
+        private const string AuditSuppressedAdvisoriesDistinctAdvisoriesSuppressedCount = "PackagesConfig.Audit.SuppressedAdvisories.DistinctAdvisoriesSuppressed.Count";
         private const string AuditDurationDownload = "PackagesConfig.Audit.Duration.Download";
         private const string AuditDurationCheck = "PackagesConfig.Audit.Duration.Check";
         private const string SourcesWithVulnerabilitiesCount = "PackagesConfig.Audit.DataSources.Count";
