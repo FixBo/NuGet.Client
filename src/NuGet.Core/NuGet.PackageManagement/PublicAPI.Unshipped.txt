@@ -4,5 +4,3 @@
 ~const NuGet.ProjectManagement.ProjectItems.NuGetAuditSuppress = "NuGetAuditSuppress" -> string
 ~const NuGet.ProjectManagement.ProjectItems.PackageDownload = "PackageDownload" -> string
 ~const NuGet.ProjectManagement.ProjectItems.PackageVersion = "PackageVersion" -> string
-~NuGet.PackageManagement.PackageRestoreContext.SdkAnalysisLevel.get -> string
-~NuGet.PackageManagement.PackageRestoreContext.SdkAnalysisLevel.set -> void
