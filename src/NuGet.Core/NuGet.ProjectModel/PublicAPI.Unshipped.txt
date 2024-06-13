@@ -1,4 +1,6 @@
 #nullable enable
+NuGet.ProjectModel.PackageSpec.UsingMicrosoftNETSdk.get -> bool
+NuGet.ProjectModel.PackageSpec.UsingMicrosoftNETSdk.set -> void
 NuGet.ProjectModel.RestoreAuditProperties.SuppressedAdvisories.get -> System.Collections.Generic.HashSet<string!>?
 NuGet.ProjectModel.RestoreAuditProperties.SuppressedAdvisories.set -> void
 ~NuGet.ProjectModel.PackageSpec.SdkAnalysisLevel.get -> string
