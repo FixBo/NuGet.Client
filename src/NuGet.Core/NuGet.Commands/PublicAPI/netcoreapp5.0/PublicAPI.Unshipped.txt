@@ -1,12 +1,4 @@
 #nullable enable
 ~static NuGet.Commands.MSBuildRestoreUtility.GetRestoreAuditProperties(NuGet.Commands.IMSBuildItem specItem, System.Collections.Generic.HashSet<string> suppressionItems) -> NuGet.ProjectModel.RestoreAuditProperties
-~NuGet.Commands.RestoreRequest.SdkAnalysisLevel.get -> string
-~NuGet.Commands.RestoreRequest.SdkAnalysisLevel.set -> void
-~NuGet.Commands.RestoreArgs.SdkAnalysisLevel.get -> string
-~NuGet.Commands.RestoreArgs.SdkAnalysisLevel.set -> void
 ~static NuGet.Commands.MSBuildRestoreUtility.GetDependencySpec(System.Collections.Generic.IEnumerable<NuGet.Commands.IMSBuildItem> items, string SdkAnalysisLevel) -> NuGet.ProjectModel.DependencyGraphSpec
 ~static NuGet.Commands.MSBuildRestoreUtility.GetDependencySpec(System.Collections.Generic.IEnumerable<NuGet.Commands.IMSBuildItem> items, bool readOnly, string SdkAnalysisLevel) -> NuGet.ProjectModel.DependencyGraphSpec
-~NuGet.Commands.RestoreArgs.UsingMicrosoftNETSdk.get -> System.Collections.Generic.Dictionary<string, bool>
-~NuGet.Commands.RestoreArgs.UsingMicrosoftNETSdk.set -> void
-~NuGet.Commands.RestoreRequest.UsingMicrosoftNETSdk.get -> System.Collections.Generic.Dictionary<string, bool>
-~NuGet.Commands.RestoreRequest.UsingMicrosoftNETSdk.set -> void
