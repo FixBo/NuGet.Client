@@ -3,5 +3,5 @@ NuGet.ProjectModel.RestoreAuditProperties.SuppressedAdvisories.get -> System.Col
 NuGet.ProjectModel.RestoreAuditProperties.SuppressedAdvisories.set -> void
 ~NuGet.ProjectModel.PackageSpec.SdkAnalysisLevel.get -> NuGet.Versioning.NuGetVersion
 ~NuGet.ProjectModel.PackageSpec.SdkAnalysisLevel.set -> void
-NuGet.ProjectModel.PackageSpec.UsingMicrosoftNETSdk.get -> bool?
 NuGet.ProjectModel.PackageSpec.UsingMicrosoftNETSdk.set -> void
+NuGet.ProjectModel.PackageSpec.UsingMicrosoftNETSdk.get -> bool
