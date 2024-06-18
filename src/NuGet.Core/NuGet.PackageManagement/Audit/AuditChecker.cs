@@ -230,6 +230,12 @@ namespace NuGet.PackageManagement
 
                         if (auditSetting == default || auditSetting.IsAuditEnabled && (int)vulnerability.Severity >= (int)auditSetting.MinimumSeverity)
                         {
+                            if (CheckIfAdvisoryHasBeenSuppressed(auditSetting?.SuppressedAdvisories, vulnerability.Url.OriginalString, ref TotalWarningsSuppressedCount, ref DistinctAdvisoriesSuppressedCount))
+                            {
+                                continue;
+                            }
+
+                            /*
                             if (auditSetting?.SuppressedAdvisories?.TryGetValue(vulnerability.Url.OriginalString, out bool advisoryUsed) == true)
                             {
                                 TotalWarningsSuppressedCount++;
@@ -242,6 +248,7 @@ namespace NuGet.PackageManagement
 
                                 continue;
                             }
+                            */
 
                             isVulnerabilityReported = true;
                             if (!counted)
@@ -352,6 +359,24 @@ namespace NuGet.PackageManagement
                 default:
                     return ("unknown", NuGetLogCode.NU1900);
             }
+        }
+
+        private static bool CheckIfAdvisoryHasBeenSuppressed(Dictionary<string, bool>? suppressedAdvisories, string advisoryUrl, ref int totalWarningsSuppressedCount, ref int distinctAdvisoriesSuppressedCount)
+        {
+            if (suppressedAdvisories?.TryGetValue(advisoryUrl, out bool advisoryUsed) == true)
+            {
+                totalWarningsSuppressedCount++;
+
+                if (!advisoryUsed)
+                {
+                    suppressedAdvisories[advisoryUrl] = true;
+                    distinctAdvisoriesSuppressedCount++;
+                }
+
+                return true;
+            }
+
+            return false;
         }
 
         internal class PackageAuditInfo
