@@ -91,7 +91,6 @@ namespace NuGet.DependencyResolver
                                                     Strings.Error_PackageNotFoundWhenExpected,
                                                         match.Provider.Source,
                                                     ex.PackageIdentity.ToString());
-                        context.Logger.LogError(message);
 
                         throw new FatalProtocolException(message, ex);
                     }
